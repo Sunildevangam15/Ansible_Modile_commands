@@ -1,0 +1,43 @@
+ ansible demo -m ping
+    7  ansible demo -a "uptime"
+    8  ansible demo -m uptime
+    9  ansible demo -m command -a "pwd"
+   10  ansible demo -m shell -a "ls -a"
+   11  history
+   12  ansible demo -b -a "which httpd"
+   13  exit
+   14  ansible demo -b -a "which httpd"
+   15  ansible demo -b -m yum -a "pkg=httpd state=present"
+   16  ansible demo -b -a "which httpd"
+   17  ansible demo -b -m shell -a "systemctl status httpd"
+   18  ansible demo -b -a "systemctl status httpd"
+   19  ansible demo -b -m service -a "name=httpd state=started"
+   20  ansible demo -b -m command -a "systemctl status httpd"
+   21  ansible demo -b -m service -a "name=httpd state=stopped
+   22  ansible demo -b -m service -a "name=httpd state=stopped"
+   23  ansible demo -b -m yum -a "pkg=httpd state=absent"
+   24  ansible demo -b -a "which httpd"
+
+ansible demo -b -m user -a "name=sunil state=present"
+   27  ls
+   28  ls -a
+   29  ansible demo -b -m -a "ls"
+   30  ansible demo -b -a "cat /etc/passwd"
+   31  ansibe demo -b -m user -a "name=sunil state=absent"
+   32  ansible demo -b -m user -a "name=sunil state=absent"
+   33  ansible demo -b -a "cat /etc/passwd"
+   34  ansible demo -b -m group -a "name=DevOps state=present"
+   35  ansible demo -b -a "cat /etc/group"
+   36  ansibe demo -b -m group -a "name=DevOps state=absent"
+   37  ansible demo -b -m group -a "name=DevOps state=absent"
+   38  ansible demo -b -m file -a "path=/home/ansible/demo state=directory"
+   39  ansible demo -b -m -a "ls"
+   40  ansible demo -m -a "ls"
+   41  ansible demo -b -m file -a "path=/home/ansible/demo state=absent"
+   42  ansible demo -b -m file -a "path=/home/ansible/demo state=directory mode=0755"
+   43  ansible demo -b -m file -a "path=/home/ansible/demo state=absent mode=0755"
+   44  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=touch"
+   45  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=touch mode=0755"
+   46  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=absent mode=0755"
+   47  touch sample.txt
+   48  ansible demo -b -m copy -a "src=/home/ansible/sample.txt dest=/home/ansible"
