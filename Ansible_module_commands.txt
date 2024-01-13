@@ -41,3 +41,4 @@ ansible demo -b -m user -a "name=sunil state=present"
    46  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=absent mode=0755"
    47  touch sample.txt
    48  ansible demo -b -m copy -a "src=/home/ansible/sample.txt dest=/home/ansible"
+
